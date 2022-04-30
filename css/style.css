@@ -11,15 +11,15 @@ body{
     width: 100%;
     height: 100vh;
     font-size: 16px;
-    font-family: 'poppins', 'roboto';
-    background-color: #fff;
+    font-family: 'poppins', 'roboto', 'open sans';
+    background-color: #cccc;
 }
 
 
 /* Header Styling */
 header{
     background: #292929;
-    border-bottom: var(--primary-color) 2px solid;
+    border-bottom: var(--primary-color) 3px solid;
     color: #fff;
 }
 #logo{
@@ -73,7 +73,7 @@ nav ul li a{
     background: #fff;
 }
 .bg-img{
-    background-image: url(../images/coding-img.jpg);
+    background-image: url(../images/coding-img.png);
     background-position: center;
     background-size: cover;
     height: 30vh;
@@ -141,11 +141,10 @@ span{
     padding-bottom: 20px;
     background: #fefefe;
 }
-.my-skills h2{
+.skills h2{
     text-align: center;
     margin: auto;
     padding-top: 20px;
-    font-family: arial;
     font-size: 1.9em;
     font-weight: bolder;
 }
@@ -182,35 +181,26 @@ span{
     padding-bottom: 20px;
     background: #292929;
 }
-.my-tools h2{
+.tools h2{
     text-align: center;
     margin: auto;
-    font-family: arial;
     font-size: 1.9em;
     font-weight: bolder;
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
     color: #fff;
 }
 .tools-img{
     width: 90%;
     position: relative;
     margin: auto;
+
 }
 .tools-img img{
     width: 100%;
     height: 40%;
-    padding: 10px;;
-}
-.tools-img .ttext-wrap{
-    position: absolute;
-    height: 100%;
-    text-align: center;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
 }
 .ttext-wrap h3{
     font-size: 1.4em;
@@ -234,7 +224,6 @@ span{
     margin: auto;
     padding-top: 20px;
     padding-bottom: 30px;
-    font-family: arial;
     font-size: 1.9em;
     font-weight: bolder;
 }
@@ -285,7 +274,7 @@ span{
 .portfolio-img img{
     width: 100%;
     height: 100%;
-    padding: 10px;;
+    padding: 10px;
 }
 .portfolio-img .stext-wrap{
     position: absolute;
@@ -349,12 +338,16 @@ footer{
 .ft-brand .nav-socials i{
     padding: 5px;
 }
+.ft-brand h4{
+    font-family: 'open sans';
+    font-size: .9em;
+    font-weight: 100;
+}
 
 .line{
-    width: 1px;
     height: 250px;
     margin-left: 10px;
-    border: 3px solid var(--secondary-color);
+    border: 2px solid var(--secondary-color);
 }
 
 .ft-info{
@@ -404,35 +397,50 @@ footer{
 
 
 
-@media screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     /* Header */
     header{
-        display: flex;
-        justify-content: space-between;
         height: 70px;
+        width: 100%;
     }
     #logo h2{
         font-size: 1.4em;
-        padding: 10px;
+        padding: 5px;
+        letter-spacing: 2px;
     }
-    .menu{
+    .menu, #exit-button{
         display: none;
     }
+    nav{
+        width: 55%;
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        top: 0;
+        right: 0;
+        position: unset;
+    }
     nav ul{
-        padding: 0;
+        display: flex;
+        margin-top: -12%;
     }
     nav ul li{
         list-style: none;
     }
     nav ul li a{
-        font-size: 1.3em;
+        font-size: 1.4em;
         text-decoration: none;
         color: var(--secondary-color);
         font-family: 'Roboto';
+        padding: 6px;
+    }
+    nav .current a{
+        color: var(--primary-color);
     }
 
     /* First Look */
     .bg-img{
+        background-image: url(../images/BW\ blue.png);
         height: 50vh;
     }
     .first-look h1{
@@ -479,14 +487,15 @@ footer{
             line-height: 1.7;
         }
 
-
         /* Portfolio */
         .portfolio-img img{
             width: 100%;
             height: 40vh;
             padding: 10px;;
         }
-
+        .my-portfolio h3{
+            font-size: 1.5em;
+        }
 
         /* Footer */
         .ft-wrapper{
@@ -526,13 +535,52 @@ footer{
 
 
 @media screen and (min-width: 1024px){
+    /* Header */
+    header{
+        height: 70px;
+        width: 100%;
+    }
+    #logo h2{
+        font-size: 1.3em;
+        padding-top: 10px;
+        margin-left: 20px;
+    }
+    nav{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        top: 0;
+        right: 0%;
+        position: unset;
+        margin-left: 40%;
+    }
+    nav ul{
+        display: flex;
+        margin-top: -10%;
+    }
+    nav ul li{
+        list-style: none;
+    }
+    nav ul li a{
+        font-size: 1.4em;
+        color: var(--secondary-color);
+        font-family: 'Roboto';
+        margin-right: 5px;
+        transition: .3s;
+    }
+    nav ul li a:hover{
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+
+    /* First Look */
     .bg-img{
         background-image: url(../images/BW\ blue.png);
         background-position: center;
         background-size: cover;
         height: 100vh;
     }
-    
     .first-look h1{
     top: -8%;
     padding-left: 350px;
@@ -543,4 +591,236 @@ footer{
     padding-left: 420px;
     font-size: 1.5em;
     }
+
+    /* About Me */
+    .about-me{
+        display: flex;
+    }
+    .about-img{
+        display: block;
+        margin: 0;
+        padding-left: 50px;
+        padding-top: 60px;
+    }
+    .about-img img{
+        width: 250px;
+        height: 250px;
+        clip-path: none;
+    }
+    .about-me h2{
+        margin: 20px 0 0 40px;
+    }
+    .about-text{
+        width: 60%;
+        padding-left: 50px;
+    }
+    .about-me p{
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    /* Skills, Tools & Langs */
+    /* Skills */
+    .my-skills{
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        margin: auto;
+    }
+    .skills h2{
+        padding-top: 30px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .skills-img img{
+        width: 100%;
+        height: 40%;
+    }
+    .skills-img .stext-wrap{
+        text-align: center;
+    }
+    .web-app h3{
+        padding-right: 20%;
+    }
+    .stext-wrap h3{
+        font-size: 1.4em;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        color: var(--secondary-color);
+    }
+
+    /* Tools */
+    .my-tools{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        margin-left: 14%;
+    }
+    .tools h2{
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        color: #fff;
+    }
+    .tools-img{
+        width: 100%;
+        margin: auto;
+    }
+    .tools-img img{
+        width: 80%;
+        height: 40%;
+    }
+
+    /* Languages */
+    .langs h2{
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .my-langs{
+        display: flex;
+        margin-left: 22%;
+    }
+    .ltext-wrap{
+        margin-left: -16%;
+    }
+    .langs-txt{
+        width: 80%;
+        margin: auto;
+    }
+    .langs p{
+        font-size: 1.2em;
+        line-height: 1.7;
+    }
+
+    /* Portfolio */
+    .portfolio{
+        margin-top: 30px;
+    }
+    .my-portfolio{
+        display: flex;
+    }
+    .portfolio-img img{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    /* Footer */
+    .nav-socials-2 i{
+        font-size: 1.5em;
+        padding: 5px;
+        color: var(--primary-color);
+    }
+    .nav-socials-2 i:hover{
+        transform: rotate(360deg);
+        transition: .9s ease;
+    }
+    .nav-socials-2 .face:hover{
+        color: #2f90ff;
+    }
+    .nav-socials-2 .you:hover{
+        color: #c20404;
+    }
+    .nav-socials-2 .insta:hover{
+        color: #ec16ec;
+    }
+    .nav-socials-2 .twit:hover{
+        color: #2f90ff;
+    }
+    .nav-socials-2 .github:hover{
+        color: #fff;
+    }
+}
+
+
+@media screen and (min-width: 1669px){
+     /* Header */
+    #logo h2{
+        font-size: 1.3em;
+        padding-top: 10px;
+        margin-left: 40px;
+    }
+    nav{
+        width: 50%;
+        padding-left: 20%;
+    }
+
+    /* First Look */
+    .first-look h1{
+    padding-left: 40%;
+    font-size: 3.5em;
+    }
+    .first-look p{
+    padding-left: 45%;
+    font-size: 1.7em;
+    }
+
+    /* About Me */
+    .about-cont{
+        background: #292929;
+    }
+    .about-me{
+        width: 70%;
+        margin: auto;
+        border: 2px solid #fff;
+    }
+
+    /* Skills, Tools & Langs */
+    /* Skills */
+    .graphics-txt, .video-txt{
+        margin-left: 13%;
+    }
+    .web-app h3{
+        margin-right: -25%;
+    }
+
+    /* Languages */
+    .langs h2{
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .my-langs{
+        width: 40%;
+        display: flex;
+        margin-left: 32%;
+    }
+    .ltext-wrap{
+        margin-left: -24%;
+    }
+    .langs-txt{
+        width: 50%;
+        margin: auto;
+    }
+
+    /* Footer Styling */
+footer{
+    width: 100%;
+    height: 300px;
+    background: #292929;
+}
+.ft-wrapper{
+    width: 70%;
+    margin-left: 0%;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    
+}
+.line{
+    height: 250px;
+    margin-left: -30%;
+    border: 2px solid var(--secondary-color);
+}
+.ft-info{
+    display: block;
+    color: var(--secondary-color);
+    line-height: 1;
+    margin-left: -30%;
+}
+.ft-info p{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    line-height: 1.2;
+}
 }

@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Aladin&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/style.css">
     <title>My Portfolio</title>
 </head>
@@ -22,17 +23,18 @@
             <div class="menu">
                 <i class="fa-solid fa-bars menu-btn" id="menu-button"></i>
             </div>
+            <nav>
+                <i class="fa-solid fa-xmark exit" id="exit-button"></i>
+                <ul>
+                    <li class="current"><a href="index.html" class="">Home</a></li>
+                    <li><a href="about.html" class="">About</a></li>
+                    <li><a href="about.html" class="">Skills</a></li>
+                    <li><a href="contact.html" class="">Portfolio</a></li>
+                    <li><a href="blog.html" class="">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <i class="fa-solid fa-xmark exit" id="exit-button"></i>
-            <ul>
-                <li><a href="index.html" class="">Home</a></li>
-                <li><a href="about.html" class="">About</a></li>
-                <li><a href="about.html" class="">Portfolio</a></li>
-                <li><a href="contact.html" class="">Contact</a></li>
-                <li><a href="blog.html" class="">Blog</a></li>
-            </ul>
-        </nav>
+        
     </header>
 
     <!-- First Look Cooding -->
@@ -42,57 +44,66 @@
         <p>Best Among Equals</p>
     </section>
 
-
-    <section class="about-me">
-        <div class="about-img">
-            <img src="./images/watsup pic.jpg" alt="">
-            <h2>A Bit About Me</h2>
-        </div>
-        <p>I'm <strong>Patrick Kenneford Annan</strong>, popularly known as Servant-Kenn. 
-            Servant because I studied <em>Theology</em> and have been ordained as a 
-            Reverend Minister, working as a Pastor since <em>December 2017</em>. Aside 
-        my ministerial work, I also love to play football, engage in research works, 
-        and listing to cool music.</p>
-        <p>Now I'm into Web and App development and am so passionate about it. And not just 
-            passionate, but also determined to expand my knowledge in web development 
-            by way of learning new skills and updating myself always with new ideas.
-            I am willing to learn and to constantly enable me to improve and to become a
-            good developer</p>
-        <p>Since I'm new to web development, I'm ever ready and willing to learn from 
-            experts or anyone who is ahead of me and would love to be my teacher.</p>
-        <p>I'm a strong African man who comes from <strong>GHANA</strong>, but currently living in Germany with 
-            my strong and beautiful family.</p>
+    <!-- About Me Coding -->
+    <section class="about-cont">
+        <div class="about-me">
+            <div class="about-img">
+                <img src="./images/watsup pic.jpg" alt="">
+                <h2>A Bit About Me</h2>
+            </div>
+            <div class="about-text">
+                <p>I'm <strong>Patrick Kenneford Annan</strong>, popularly known as Servant-Kenn. 
+                    Servant because I studied <em>Theology</em> and have been ordained as a 
+                    Reverend Minister, working as a Pastor since <em>December 2017</em>. Aside 
+                    my ministerial work, I also love to play football, engage in research works, 
+                    and listing to cool music.
+                </p>
+                <p>Now I'm into Web and App development and am so passionate about it. And not just 
+                    passionate, but also determined to expand my knowledge in web development 
+                    by way of learning new skills and updating myself always with new ideas.
+                    I am willing to learn and to constantly enable me to improve and to become a
+                    good developer
+                </p>
+                <p>Since I'm new to web development, I'm ever ready and willing to learn from 
+                    experts or anyone who is ahead of me and would love to be my teacher.
+                </p>
+                <p>I'm a strong African man who comes from <strong>GHANA</strong>, but currently living in Germany with 
+                    my strong and beautiful family.
+                </p>
+            </div>
+        </div> 
     </section>
 
-
+    <!-- Skills Coding -->
     <section class="skills">
+        <h2>My Skills</h2>
         <div class="my-skills">
-            <h2>My Skills</h2>
+            
             <div class="skills-img">
-                <img src="./images/graphics.jpg" alt="">
-                <div class="stext-wrap">
+                <img src="./images/graphics.png" alt="">
+                <div class="stext-wrap graphics-txt">
                     <h3>Graphic Design</h3>
                 </div>
             </div>
             <div class="skills-img">
-                <img src="./images/video.jpg" alt="">
-                <div class="stext-wrap">
+                <img src="./images/video.png" alt="">
+                <div class="stext-wrap video-txt">
                     <h3>Video Editing</h3>
                 </div>
             </div>
             <div class="skills-img">
-                <img src="./images/Web-App.jpg" alt="">
-                <div class="stext-wrap">
+                <img src="./images/web-app.png" alt="">
+                <div class="stext-wrap web-app">
                     <h3>Web & App Development</h3>
                 </div>
             </div>
         </div>
     </section>
 
-
+    <!-- Tools Coding -->
     <section class="tools">
+        <h2>My Tools</h2>
         <div class="my-tools">
-            <h2>My Tools</h2>
             <div class="tools-img">
                 <img src="./images/Adobe-copy.png" alt="">
             </div>
@@ -102,7 +113,7 @@
         </div>
     </section>
 
-
+    <!-- Mastered Languages Coding -->
     <section class="langs">
         <h2>Mastered Languages</h2>
         <div class="my-langs">
@@ -125,18 +136,21 @@
                 </div>
             </div>
         </div>
-        <p>Though I'm new to web development having no working experience,
-            yet I pride myself in what I've learnt, experienced and can do best.
-            And I know one thing for sure that what I have in me can make a difference. 
-        Currently, I can only work with HTML5 and CSS, but will be upgrading my skills by 
-        learning other programming languages like Javascript, Python, Php and C++ along 
-        with other frame works.</p>
+        <div class="langs-txt">
+            <p>Though I'm new to web development having no working experience,
+                yet I pride myself in what I've learnt, experienced and can do best.
+                And I know one thing for sure that what I have in me can make a difference. 
+            Currently, I can only work with HTML5 and CSS, but will be upgrading my skills by 
+            learning other programming languages like Javascript, Python, Php and C++ along 
+            with other frame works.
+            </p>
+        </div>
     </section>
 
-
+    <!-- POrtfolio Coding -->
     <section class="portfolio">
+        <h2>My Portfolios</h2>
         <div class="my-portfolio">
-            <h2>My Portfolios</h2>
             <div class="portfolio-img">
                 <div class="ptext-wrap">
                     <h3>Restaurant Website</h3>
@@ -152,17 +166,24 @@
         </div>
     </section>
 
-
+    <!-- Footer Coding -->
     <footer>
         <div class="ft-wrapper">
             <div class="ft-brand">
                 <h2>CodeWith<span class="ft-btm">Kenn</span></h2>
                 <p><i>Best among equals...</i></p>
+                <br>
+                Contacts:
+                <h4>kenneford85@gmail.com</h4>
+                <h4>Friedrichstrasse, Siegen-Germany</h4>
+                <h4>Tel: 01234567891011</h4>
+                <br>
                 <div class="nav-socials-2">
-                    <i class="fa-brands fa-facebook face" title="Facebook Link"></i>
-                    <i class="fa-brands fa-youtube yout" title="Youtube Link"></i>
-                    <i class="fa-brands fa-instagram insta" title="Instagram Link"></i>
-                    <i class="fa-brands fa-twitter twit" title="Twitter Link"></i>
+                    <a href="https://www.facebook.com/keneltv/about/?ref=page_internal" target="_blank" class=""><i class="fa-brands fa-facebook face" title="Facebook Link"></i></a>
+                    <a href="https://www.youtube.com/channel/UC7CepXL80f--rtDHwlc5Q2Q" target="_blank" class=""><i class="fa-brands fa-youtube yout" title="Youtube Link"></i></a>
+                    <a href="https://www.instagram.com/keneltv/channel" target="_blank" class=""><i class="fa-brands fa-instagram insta" title="Instagram Link"></i></a>
+                    <a href="https://twitter.com/KenelTv" target="_blank" class=""><i class="fa-brands fa-twitter twit" title="Twitter Link"></i></a>
+                    <a href="https://github.com/Kenneford" target="_blank" class=""><i class="fa-brands fa-github github" title="GitHub Link"></i></a>
                 </div>
             </div>
             <div class="line"></div>
