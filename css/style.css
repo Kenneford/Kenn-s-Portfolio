@@ -21,6 +21,7 @@ header{
     background: #292929;
     border-bottom: var(--primary-color) 3px solid;
     color: #fff;
+    z-index: 10;
 }
 #logo{
     display: flex;
@@ -137,6 +138,9 @@ span{
 }
 
 /* Skills Styling */
+#my-skills{
+    transform: .5s;
+}
 .skills{
     padding-bottom: 20px;
     background: #fefefe;
@@ -338,6 +342,11 @@ footer{
 .ft-brand .nav-socials i{
     padding: 5px;
 }
+.nav-socials-2 i{
+    font-size: 1em;
+    padding: 3px;
+    color: var(--primary-color);
+}
 .ft-brand h4{
     font-family: 'open sans';
     font-size: .9em;
@@ -512,8 +521,8 @@ footer{
         }
         .nav-socials-2 i{
             font-size: 1.3em;
-            padding-top: 15px;
-            margin-right: 15px;
+            padding: 3px;
+            color: var(--primary-color);
         }
         .ft-info p{
             font-size: 1.2em;
