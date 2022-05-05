@@ -411,6 +411,7 @@ footer{
     header{
         height: 70px;
         width: 100%;
+        position: fixed;
     }
     #logo h2{
         font-size: 1.4em;
@@ -445,6 +446,8 @@ footer{
     }
     nav .current a{
         color: var(--primary-color);
+        font-size: 1.4em;
+        font-weight: 800;
     }
 
     /* First Look */
@@ -548,6 +551,7 @@ footer{
     header{
         height: 70px;
         width: 100%;
+        position: fixed;
     }
     #logo h2{
         font-size: 1.3em;
@@ -742,8 +746,9 @@ footer{
 }
 
 
-@media screen and (min-width: 1669px){
+@media screen and (min-width: 1629px){
      /* Header */
+
     #logo h2{
         font-size: 1.3em;
         padding-top: 10px;
