@@ -13,6 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./media-query/mediaquery.css">
     <title>My Portfolio</title>
 </head>
 <body>
@@ -21,17 +22,18 @@
         <div id="logo">
             <h2>CodeWith<span>Kenn</span></h2>
             <div class="menu">
-                <i class="fa-solid fa-bars menu-btn" id="menu-button"></i>
+                <i class="fa-solid fa-bars menu-btn" id="menu-button" onclick="clickFunction()"></i>
             </div>
             <nav>
-                <i class="fa-solid fa-xmark exit" id="exit-button"></i>
-                <ul>
+                
+                <ul id="navList" onclick="clickFunction()">
                     <li class="current"><a href="index.html" class="">Home</a></li>
-                    <li><a href="#about-me" class="">About</a></li>
-                    <li><a href="#my-skills" class="">Skills</a></li>
-                    <li><a href="#my-portfolios" class="">Portfolio</a></li>
-                    <li><a href="#my-contacts" class="">Contact</a></li>
+                    <li onclick="clickFunction()"><a href="#about-me" class="">About</a></li>
+                    <li onclick="clickFunction()"><a href="#my-skills" class="">Skills</a></li>
+                    <li onclick="clickFunction()"><a href="#my-portfolios" class="">Portfolio</a></li>
+                    <li onclick="clickFunction()"><a href="#my-contacts" class="">Contact</a></li>
                 </ul>
+                <i class="fa-solid fa-xmark exit" id="exit-button" onclick="clickFunction()"></i>
             </nav>
         </div>
         
@@ -191,6 +193,9 @@
                 <p>For a better coding tutorials, <br> stay connected with me to have the best experience.</p>
                 <input type="email" name="email" id="email" placeholder="Enter email here...">
                 <input type="submit" name="submit" id="submit" value="Send">
+                <div class="go-home">
+                    <a href="./index.html">Go Home</a>
+                </div>
             </div>
         </div>
         <div class="ft-bottom">
@@ -198,6 +203,6 @@
         </div>
     </footer>
     
-
+    <script src="./javascript/script.js"></script>
 </body>
 </html>
